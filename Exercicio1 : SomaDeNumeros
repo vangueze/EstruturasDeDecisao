@@ -1,0 +1,33 @@
+/* Faca um algoritmo que leia os valores de A,B e C e 
+imprima na tela se a soma de A + B eh menor que C */
+
+import java.util.Scanner;
+
+  public class Exercicio1{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int a, b, c, soma = 0;
+
+    System.out.println("Introduza o valor de A : ");
+    a = s.nextInt();
+
+    System.out.println("Introduza o valor de B : ");
+    b = s.nextInt();
+
+    System.out.println("Introduza o valor de C : ");
+    c = s.nextInt();
+
+    soma = a + b;
+    System.out.println("A = "+a+"\nB = "+b+"\nC = "+c+"\nA + B = "+soma);
+
+    //Instrucao IF-ELSE
+    if(soma > c){
+      System.out.println("Soma de A + B eh maior que C");
+    }else{
+      System.out.println("Soma de A + B eh menor que C");
+    }
+}
+}
+  
