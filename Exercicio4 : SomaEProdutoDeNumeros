@@ -1,0 +1,31 @@
+/* Faca um algoritmo que leia dois valores A e B.
+Se os valores forem iguais devera se somar os dois, 
+caso contrario multiplique A por B. Ao final de 
+qualquer um dos calculos deve-se atribuir o resultado
+para uma variavel C e mostrar seu conteudo na tela */
+
+import java.util.Scanner;
+
+  public class Exercicio4{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int a, b, c = 0;
+
+    System.out.println("Introduza o valor de A : ");
+    a = s.nextInt();
+
+    System.out.println("Introduza o valor de B : ");
+    b = s.nextInt();
+
+    if ( a == b){
+      c = a + b;
+      System.out.println(a+" + "+b+" = "+c);
+    }else{
+      c = a * b;
+      System.out.println(a+" * "+b+" = "+c);
+    }
+}
+}
+    
