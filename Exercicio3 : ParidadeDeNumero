@@ -1,0 +1,22 @@
+/* Faca um algoritmo para receber um numero qualquer e 
+informar na tela se eh par ou impar */
+
+import java.util.Scanner;
+
+  public class Exercicio3{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num;
+
+    System.out.println("Introduza um numero : ");
+    num = s.nextInt();
+
+    if(num % 2 == 0){
+      System.out.println("Numero par");
+    }else{
+      System.out.println("Numero impar");
+    }
+}
+}
