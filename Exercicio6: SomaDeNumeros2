@@ -1,4 +1,4 @@
-/* Faca um algoritmo que leia uma variavel e some 5 casoseja par,
+/* Faca um algoritmo que leia uma variavel e some 5 caso seja par,
 ou some 8 caso seja impar. Imprimir o resultado desta operacao */
 
 import java.util.Scanner;
