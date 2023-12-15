@@ -1,0 +1,32 @@
+/* Faca um algoritmo que leia o nome, o sexo e o estado civil de
+uma pessoa. Caso o sexo seja "F" e estado civil seja "CASADA", solicitar o tempo de casada */
+
+import java.util.Scanner;
+
+  public class Exercicio2{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    String nome = "", estadoCivil = "";
+    char sexo;
+    byte tempo;
+
+    System.out.println("Introduza o nome : ");
+    nome = s.nextLine();
+
+    System.out.println("Introduza o sexo : ");
+    sexo = s.next().charAt(0);
+
+    System.out.println("Introduza o estado civil : ");
+    estadoCivil = s.nextLine();
+
+    if((sexo == "f" || sexo == "F") && (estadoCivil == "casada" || estadoCivil == "CASADA")){
+      System.out.println("Introduza o tempo de casada : ");
+      tempo = s.nextByte();
+    }
+    System.out.println("Nome = "+nome+"\nSexo = "+sexo+"\nEstado Civil = "+estadoCivil+"\nTempo de casada = "+tempo);
+}
+}
+    
+    
