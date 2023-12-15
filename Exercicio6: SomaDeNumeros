@@ -1,0 +1,24 @@
+/* Faca um algoritmo que leia uma variavel e some 5 casoseja par,
+ou some 8 caso seja impar. Imprimir o resultado desta operacao */
+
+import java.util.Scanner;
+
+  public class Exercicio6{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num, soma = 0;
+
+    System.out.println("Introduza o numero : ");
+    num = s.nextInt();
+
+    if(num % 2 == 0){
+      soma = num + 5;
+      System.out.println(num+" + "5 = "+soma); 
+    }else{
+      soma = num + 8;
+      System.out.println(num+" + "8 = "+soma);
+    }
+    }
+}
