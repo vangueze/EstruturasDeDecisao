@@ -1,0 +1,50 @@
+/* Implemente um algoritmo que leia um numero e uma opcao 
+de listagem. Com base nessa opcao escreva a sequencia 
+dos numeros em ordem crescente (de zero ate o numero) 
+ou decrescente (do numero ate zero). Opcao 1 para 
+crescente e 2 para decrescente */
+
+import java.util.Scanner;
+
+  public class Exercicio8{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num = 0, opcao;
+
+    System.out.println("Introduza um numero : ");
+    num = s.nextInt();
+
+    System.out.println("Introduza uma opcao : ");
+    opcao = s.nextInt();
+
+    if(opcao == 1){
+      System.out.println("Ordem crescente");
+        for(int i = 0; i <= num; i++){
+          System.out.print(i+" ");
+        }
+    }else if(opcao == 2){
+                System.out.println("Ordem decrescente");
+                  for(int i = num; i >= 0; i--){
+                    System.out.print(i+" ");
+                }
+      }
+
+    switch(opcao){
+      case 1 : System.out.println("Ordem crescente");
+                  for(byte i = 0; i <= num; i++){
+                     System.out.print(i+" ");
+               };
+                break;
+      case 2 : System.out.println("Ordem decrescente");
+                  for(byte i = num; i >= 0; i--){
+                    System.out.println(i+" ");
+                };
+                  break;
+      default : System.out.println("Opcao invalida");
+                  break;
+    }
+}
+}
+    
