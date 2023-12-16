@@ -1,0 +1,36 @@
+/* Escreva um algoritmo que leia tres valores inteiros e 
+diferentes e mostre-os em ordem decrescente */
+
+import java.util.Scanner;
+
+  public class Exercicio6{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int val1, val2, val3;
+
+    System.out.println("Introduza o 1o valor : ");
+    val1 = s.nextInt();
+
+    System.out.println("Introduza o 2o valor : ");
+    val2 = s.nextInt();
+
+    System.out.println("Introduza o 3o valor : ");
+    val3 = s.nextInt();
+
+    if(val1 > val2 && val2 > val3){
+      System.out.println(val1+" , "+val2+" , "+val3);
+    }else if(val1 > val3 && val3 > val2){
+      System.out.println(val1+" , "+val3+" , "+val2);
+    }else if(val2 > val1 && val1 > val3){
+      System.out.println(val2+" , "+val1+" , "+val3);
+    }else if(val2 > val3 && val3 > val1){
+      System.out.println(val2+" , "+val3+" , "+val1);
+    }else if(val3 > val1 && val1 > val2){
+      System.out.println(val3+" , "+val1+" , "+val2);
+    }else if(val3 > val2 && val2 > val1){
+      System.out.println(val3+" , "+val2+" , "+val1);
+    }
+}
+}
