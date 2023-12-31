@@ -1,0 +1,23 @@
+/* Escrever se um ano informado pelo usuario
+eh bissexto ou nao. Um ano eh bissexto quando
+eh (divisivel por 400) ou eh (divisivel por 
+4 e nao por 100) */
+
+import java.util.Scanner;
+  public class Exercicio10{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int ano;
+
+    System.out.println("Introduza o ano : ");
+    ano = s.nextInt();
+
+    if((ano % 400 == 0 || ano % 4 == 0) && ano % 100 != 0){
+      System.out.println(ano+" eh ano bissexto");
+    }else{
+      System.out.println(ano+" nao eh ano bissexto");
+    }
+  }
+}
