@@ -1,0 +1,29 @@
+/* Calcular a multa : Leia a velocidade de um
+carro e a velocidade maxima para a rua :
+  * Informe 1500 meticais se estiver acima de
+    10 Km/h;
+  * Informe 2000 meticais se estiver entre 
+    11 Km/h e 30 Km/h;
+  * Informe 3000 meticais se estiver acima de 
+    31 Km/h */
+
+import java.util.Scanner;
+  public class Exercicio11{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    float velocidade;
+
+    System.out.println("Introduza a velocidade do veiculo : ");
+    velocidade = s.nextFloat();
+
+    if(velocidade >= 31){
+      System.out.println("Multa de 3000 por estar com velocidade de "+velocidade+" Km/h");
+    }else if (velocidade >= 11 && velocidade <= 30){
+      System.out.println("Multa de 2000 por estar com velocidade de "+velocidade+" Km/h");
+    }else{
+      System.out.println("Multa de 1500 por estar com velocidade de "+velocidade+" Km/h");
+    }
+  }
+}
